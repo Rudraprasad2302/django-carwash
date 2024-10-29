@@ -1,0 +1,60 @@
+{% extends "base.html" %}  
+   {% load static %}
+     {% block body %}
+
+<!--Contact section starts-->
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span>Contact</span> us</h1>
+    <div class="row">
+        <div class="image">
+            <img src="{% static 'images/Contact us-cuate.svg' %}" alt="">
+        </div>
+
+        <form action="" method="post">
+            {% csrf_token %}
+            <span>your name</span>
+            <input type="text"required placeholder="enter your full name" maxlength="50"  
+            name="name"   class="box" required="">
+           
+            <span>your mail</span>
+            <input type="email" required placeholder="enter your vaild email" maxlength="50"  
+            name="mail"   class="box" required="">
+           
+            <span>your number</span>
+            <input type="number" required placeholder="enter your vaild number" max="9999999999" min="0"  
+            name="number"   class="box" onkeypress="if(this.value.length == 10) return false;" required="">
+            <span>select service</span>
+
+            <select name="service" class="box">
+                <option value=""disabled selected>select the services --</option>
+                <option value="basic">basic</option>
+                <option value="medium">medium</option>
+                <option value="Premium plus">Premium plus</option>
+                <option value="monthly pack">monthly pack</option>
+                <option value="bike wash">bike wash</option>
+                <option value="bike detailing">bike detailing</option>
+            </select>
+            <span>select gender</span>
+            <div class="radio">
+                <input type="radio" name="gender" value="male" id="male" required="">
+                <label for="male">male</map></label>
+                
+                <input type="radio" name="gender" value="female" id="female" required="">
+                <label for="female">female</map></label>
+                
+            </div>
+            {% if request.user.is_authenticated %}
+            <input type="submit" value="send message" class="btn" name="send">
+          
+            
+
+        </form>
+    </div>
+    {% else %}
+    <a href="/login" class="btn">Login for contact us </a>
+    {% endif %}
+</section>
+
+
+     {%endblock body%}

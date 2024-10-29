@@ -1,0 +1,89 @@
+{% extends "base.html" %}  
+   {% load static %}
+     {% block body %}
+
+     <!--car care service section starts-->
+
+<section class="carwash" id="carwash">
+
+    <h1 class="heading">Car wash <span>&</span> care service</h1>
+
+    <div class="swiper carwash-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="{% static 'images/Car wash-bro.svg' %}" alt="">
+                <h1>RS 399</h1>
+                <h4>Hatchback-Rs.399/-</h4>
+                <h4>Sedan-Rs.449/-</h4>
+                <h4>SUV-Rs.499/-</h4>
+                <h1>Basic</h1>
+                <p>Exterior car wash</p>
+                <p>Eco glass clean & gloss</p>   
+                <p>Wheel clean & finish</p>    
+                <p>Clean front grill & mud flaps</p>    
+                <p>Clean Tire & shine</p>    
+                <p>Complete interior vacuuming</p>    
+                <button id="bookNowBtn">Book Now</button>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="{% static 'images/Car wash-rafiki.svg' %}" alt="">
+                <h1>RS 1599</h1>
+                <h4>Hatchback-Rs.1599/-</h4>
+                <h4>Sedan-Rs.1799/-</h4>
+                <h4>SUV-Rs.2099/-</h4>
+                <h1>Medium</h1>
+                <p>Basic package</p>
+                <p>Dashboard claning and shine</p>   
+                <p>form cleaning & interior fabrics</p>    
+                <p>Strain removal treatment on fabrics</p>    
+                <p>Ceiling carbon deposit removal</p>    
+                <p>Complete interior vacuuming</p>    
+                <button id="bookNowBtn2">Book Now</button>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="{% static 'images/Limousine-rafiki.svg' %}" alt="">
+                <h1>RS 5499</h1>
+                <h4>Hatchback-Rs.5499/-</h4>
+                <h4>Sedan-Rs.5949/-</h4>
+                <h4>SUV-Rs.6499/-</h4>
+                <h1>Premium PLuS</h1>
+                <p>Extended package</p>
+                <p>Glass treatment of all glasses</p>   
+                <p>Cavity wash</p>    
+                <p>Light scratch management</p>    
+                <p>Paint protection</p>    
+                <p>UV radiation protection</p> 
+                <p>Aroma treatment</p> 
+                <button id="bookNowBtn3">Book Now</button>  
+            </div>
+
+            <div class=" swiper-slide slide">
+                <img src="{% static 'images/2.svg' %}" alt="">
+                <h1>RS 1600</h1>
+                <h4>Hatchback-Rs.1600/-</h4>
+                <h4>Sedan-Rs.1800/-</h4>
+                <h4>SUV-Rs.2000/-</h4>
+                <h1>Monthly pack</h1>
+                <p>Exterior car wash</p>
+                <p>Eco glass clean & gloss</p>   
+                <p>Wheel clean & finish</p>    
+                <p>Clean front grill & mud flaps</p>    
+                <p>Clean Tire & shine</p>    
+                <p>Complete interior vacuuming</p>
+                <button id="bookNowBtn4">Book Now</button>    
+            </div>
+
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+        
+    </div>
+</section>
+<!--car care service section ends-->
+
+{%endblock body%}

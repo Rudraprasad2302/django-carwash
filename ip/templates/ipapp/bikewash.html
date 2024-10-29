@@ -1,0 +1,50 @@
+{% extends "base.html" %}  
+   {% load static %}
+     {% block body %}
+<!--Bike care service section starts-->
+
+<section class="bikewash" id="bikewash">
+
+    <h1 class="heading">Bike wash <span>&</span> care service</h1>
+
+    <div class=" swiper bikewash-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <img src="{% static 'images/istockphoto-1214134124-1024x1024.jpg' %}" alt="">
+                <h1>RS 130</h1>
+                <h4>Scooter-Rs.130/-</h4>
+                <h4>Bike-Rs.150/-</h4>
+                <h4>Superbike-Rs.200/-</h4>
+                <h1>Bike wash</h1>
+                <p>Full bike wash</p>
+                <p>wheel clean & service</p>   
+                <p>Clean tire & shine</p>
+                <button id="bookNowBtn5">Book Now</button>   
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="{% static 'images/istockphoto-1201170861-1024x1024.jpg' %}" alt="">
+                <h1>RS 2000</h1>
+                <h4>Scooter-Rs.2000/-</h4>
+                <h4>Bike-Rs.3000/-</h4>
+                <h4>Superbike-Rs.5000/-</h4>
+                <h1>Bike Detailing</h1>
+                <p>Bike wash package</p>
+                <p>Affixed foreign material removal</p>   
+                <p>Swirl marks & stain removal</p>
+                <p>International Standard Paint Correction</p> 
+                <p>Head light restoration</p>
+                <p>Seats and Instrument console restoration</p>
+                <button id="bookNowBtn6">Book Now</button>  
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!--Bike care service section ends-->
+
+
+
+     {%endblock body%}

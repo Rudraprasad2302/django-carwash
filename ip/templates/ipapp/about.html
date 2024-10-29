@@ -1,0 +1,26 @@
+{% extends "base.html" %}  
+   {% load static %}
+     {% block body %}
+<!--about section starts-->
+
+<section class="about" id="about">
+
+    <div class="row">
+
+        <div class="image">
+            <img src="{% static 'images/Car wash-pana.svg' %}" alt="">
+        </div>
+
+        <div class="content">
+            <h3>About us</h3>
+            {% for post in home %}
+            <p>{{post.about | safe }}</p>
+                {% endfor%}
+                <a href="/contact" class="btn">contact us</a>
+        </div>
+    </div>
+</section>
+<!--about section ends-->
+
+{%endblock body%}
+
