@@ -36,3 +36,15 @@ It includes user authentication, booking management, and an admin dashboard to c
 ---
 
 ## 📂 Project Structure
+
+django-carwash/
+│
+├── carwash/          # Main project configuration
+├── bookings/         # Booking app
+├── templates/        # HTML templates
+├── static/           # CSS & static files
+├── db.sqlite3
+├── manage.py
+└── requirements.txt
+
+---
